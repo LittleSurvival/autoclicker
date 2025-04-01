@@ -9,6 +9,10 @@ An advanced, **global hotkey**-based auto-clicker that offers multiple customiza
 5. **Toggle** or **Hold** activation
 6. **Safety Key** – hold to temporarily pause auto-clicking
 
+## Preview
+
+![Preview](preview.png)
+
 ## Key Features
 
 1. **Global Hotkeys**  
