@@ -1,6 +1,6 @@
 # Auto Clicker
 
-An advanced, **global hotkey**-based auto-clicker that offers multiple customization options, saves its config in `AppData`, and bundles into a single EXE. This auto-clicker:
+An advanced, **global hotkey**-based auto-clicker that offers multiple customization options
 
 1. **Globally Hooks** Keyboard & Mouse
 2. **Supports** Left & Right click
@@ -8,6 +8,14 @@ An advanced, **global hotkey**-based auto-clicker that offers multiple customiza
 4. **CPS** (Clicks Per Second) or **Delay** (ms) mode
 5. **Toggle** or **Hold** activation
 6. **Safety Key** – hold to temporarily pause auto-clicking
+
+---
+
+## Download & Install
+
+The easiest way to get started is to download the latest release from the [releases page](https://github.com/LittleSurvival/autoclicker/releases).
+
+---
 
 ## Preview
 
