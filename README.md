@@ -11,7 +11,7 @@ An advanced, **global hotkey**-based auto-clicker that offers multiple customiza
 
 ## Preview
 
-![Preview](preview.png)
+![Preview](impl/preview.png)
 
 ## Key Features
 
