@@ -9,16 +9,12 @@ from pynput import mouse, keyboard
 from pynput.mouse import Controller as MouseController, Button as MouseButton
 from pynput.keyboard import Key, Listener as KeyboardListener, KeyCode
 
-# ------------------------------------------------------------------------
-# 1) Store config.yaml in AppData (so it doesn't clutter the EXE folder)
-# ------------------------------------------------------------------------
-APPDATA_DIR = os.path.join(os.environ['APPDATA'], 'MyAutoClicker')
+# -- Store config.yaml
+APPDATA_DIR = os.path.join(os.environ['APPDATA'], 'AutoClickerByTheNano')
 os.makedirs(APPDATA_DIR, exist_ok=True)
 CONFIG_FILE = os.path.join(APPDATA_DIR, 'config.yaml')
 
-# ------------------------------------------------------------------------
-# 2) Default config
-# ------------------------------------------------------------------------
+# -- Default config
 default_config = {
     'left_click': {
         'mode': 'cps',          # 'cps' or 'delay'
@@ -39,9 +35,7 @@ default_config = {
     'safety_key': 'alt',        # hold this to pause clicking
 }
 
-# ------------------------------------------------------------------------
-# 3) Load / Save config
-# ------------------------------------------------------------------------
+# -- Load / Save config
 def load_config():
     if os.path.exists(CONFIG_FILE):
         with open(CONFIG_FILE, 'r', encoding='utf-8') as f:
@@ -53,9 +47,6 @@ def save_config(cfg):
     with open(CONFIG_FILE, 'w', encoding='utf-8') as f:
         yaml.safe_dump(cfg, f)
 
-# ------------------------------------------------------------------------
-# Global variables
-# ------------------------------------------------------------------------
 config = load_config()
 mouse_controller = MouseController()
 
