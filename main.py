@@ -4,6 +4,7 @@ import threading
 import time
 import yaml
 import os
+import sys
 
 from pynput import mouse, keyboard
 from pynput.mouse import Controller as MouseController, Button as MouseButton
@@ -337,13 +338,19 @@ def on_click(x, y, button, pressed):
                 start_right_clicker()
 
 root = tk.Tk()
-root.title("Auto Clicker")
+root.title("Auto Clicker v0.1")
 
-try:
-    root.iconbitmap("impl/icon.ico")
-except:
-    pass
+def resource_path(relative_path):
+    """ Get the absolute path to the resource, works for dev and for PyInstaller """
+    try:
+        base_path = sys._MEIPASS
+    except AttributeError:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, relative_path)
 
+icon_path = resource_path("impl/icon.ico")
+
+root.iconbitmap(icon_path)
 root.resizable(False, False)
 
 def apply_changes(*_):
