@@ -1,5 +1,5 @@
 left_click:
-  bind: mouse4
+  bind: left
   cps: 50
   delay: 100
   enabled: false
