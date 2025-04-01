@@ -1,0 +1,13 @@
+left_click:
+  bind: mouse4
+  cps: 50
+  delay: 100
+  enabled: false
+  mode: cps
+right_click:
+  bind: mouse5
+  cps: 50
+  delay: 200
+  enabled: false
+  mode: cps
+safety_key: alt
