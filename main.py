@@ -337,7 +337,7 @@ def on_click(x, y, button, pressed):
                 start_right_clicker()
 
 root = tk.Tk()
-root.title("Auto Clicker (Toggle/Hold)")
+root.title("Auto Clicker")
 
 try:
     root.iconbitmap("impl/icon.ico")
